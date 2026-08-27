@@ -1,78 +1,81 @@
 # phonetics.py
 
 PHONETIC_MAP = {
-    # ------------------ SVARA (Vowels - 13) ------------------
-    "a": {"char": "अ", "type": "Hrasva Svara (Short Vowel)", "place": "Kanthya (Guttural)"},
-    "aa": {"char": "आ", "type": "Dīrgha Svara (Long Vowel)", "place": "Kanthya (Guttural)"},
-    "i": {"char": "इ", "type": "Hrasva Svara (Short Vowel)", "place": "Tālavya (Palatal)"},
-    "ee": {"char": "ई", "type": "Dīrgha Svara (Long Vowel)", "place": "Tālavya (Palatal)"},
-    "u": {"char": "उ", "type": "Hrasva Svara (Short Vowel)", "place": "Oṣṭhya (Labial)"},
-    "oo": {"char": "ऊ", "type": "Dīrgha Svara (Long Vowel)", "place": "Oṣṭhya (Labial)"},
-    "ri": {"char": "ऋ", "type": "Hrasva Svara (Short Vowel)", "place": "Mūrdhanya (Retroflex)"},
-    "ree": {"char": "ॠ", "type": "Dīrgha Svara (Long Vowel)", "place": "Mūrdhanya (Retroflex)"},
-    "lri": {"char": "ऌ", "type": "Hrasva Svara (Short Vowel)", "place": "Dantya (Dental)"},
-    "e": {"char": "ए", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhatālavya (Palato-Guttural)"},
-    "ai": {"char": "ऐ", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhatālavya (Palato-Guttural)"},
-    "o": {"char": "ओ", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhoṣṭhya (Labio-Guttural)"},
-    "au": {"char": "औ", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhoṣṭhya (Labio-Guttural)"},
+    # ------------------ SVARA (Vowels) ------------------
+    "अ": {"token": "a", "type": "Hrasva Svara (Short Vowel)", "place": "Kaṇṭhya (Guttural)"},
+    "आ": {"token": "aa", "type": "Dīrgha Svara (Long Vowel)", "place": "Kaṇṭhya (Guttural)"},
+    "इ": {"token": "i", "type": "Hrasva Svara (Short Vowel)", "place": "Tālavya (Palatal)"},
+    "ई": {"token": "ee", "type": "Dīrgha Svara (Long Vowel)", "place": "Tālavya (Palatal)"},
+    "उ": {"token": "u", "type": "Hrasva Svara (Short Vowel)", "place": "Oṣṭhya (Labial)"},
+    "ऊ": {"token": "oo", "type": "Dīrgha Svara (Long Vowel)", "place": "Oṣṭhya (Labial)"},
+    "ऋ": {"token": "ri", "type": "Hrasva Svara (Short Vowel)", "place": "Mūrdhanya (Retroflex)"},
+    "ॠ": {"token": "ree", "type": "Dīrgha Svara (Long Vowel)", "place": "Mūrdhanya (Retroflex)"},
+    "ऌ": {"token": "lri", "type": "Hrasva Svara (Short Vowel)", "place": "Dantya (Dental)"},
+    "ए": {"token": "e", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhatālavya (Palato-Guttural)"},
+    "ऐ": {"token": "ai", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhatālavya (Palato-Guttural)"},
+    "ओ": {"token": "o", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhoṣṭhya (Labio-Guttural)"},
+    "औ": {"token": "au", "type": "Saṃyukta Svara (Diphthong)", "place": "Kaṇṭhoṣṭhya (Labio-Guttural)"},
 
-    # ------------------ SPARŚA (Consonants - 25) ------------------
-    # 1. Kavarga (Guttural / Kaṇṭhya)
-    "ka": {"char": "क", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Kaṇṭhya (Guttural)"},
-    "kha": {"char": "ख", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Kaṇṭhya (Guttural)"},
-    "ga": {"char": "ग", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Kaṇṭhya (Guttural)"},
-    "gha": {"char": "घ", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Kaṇṭhya (Guttural)"},
-    "nga": {"char": "ङ", "type": "Anunāsika (Nasal)", "place": "Kaṇṭhya-Nāsikya (Guttural-Nasal)"},
+    # ------------------ SPARŚA (Consonants) ------------------
+    # Kavarga (Guttural)
+    "क": {"token": "ka", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Kaṇṭhya (Guttural)"},
+    "ख": {"token": "kha", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Kaṇṭhya (Guttural)"},
+    "ग": {"token": "ga", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Kaṇṭhya (Guttural)"},
+    "घ": {"token": "gha", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Kaṇṭhya (Guttural)"},
+    "ङ": {"token": "nga", "type": "Anunāsika (Nasal)", "place": "Kaṇṭhya-Nāsikya (Guttural-Nasal)"},
 
-    # 2. Cavarga (Palatal / Tālavya)
-    "cha": {"char": "च", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Tālavya (Palatal)"},
-    "chha": {"char": "छ", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Tālavya (Palatal)"},
-    "ja": {"char": "ज", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Tālavya (Palatal)"},
-    "jha": {"char": "झ", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Tālavya (Palatal)"},
-    "nya": {"char": "ञ", "type": "Anunāsika (Nasal)", "place": "Tālavya-Nāsikya (Palatal-Nasal)"},
+    # Cavarga (Palatal)
+    "च": {"token": "cha", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Tālavya (Palatal)"},
+    "छ": {"token": "chha", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Tālavya (Palatal)"},
+    "ज": {"token": "ja", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Tālavya (Palatal)"},
+    "झ": {"token": "jha", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Tālavya (Palatal)"},
+    "ञ": {"token": "nya", "type": "Anunāsika (Nasal)", "place": "Tālavya-Nāsikya (Palatal-Nasal)"},
 
-    # 3. Ṭavarga (Retroflex / Mūrdhanya)
-    "ta_ret": {"char": "ट", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Mūrdhanya (Retroflex)"},
-    "tha_ret": {"char": "ठ", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Mūrdhanya (Retroflex)"},
-    "da_ret": {"char": "ड", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Mūrdhanya (Retroflex)"},
-    "dha_ret": {"char": "ढ", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Mūrdhanya (Retroflex)"},
-    "nna": {"char": "ण", "type": "Anunāsika (Nasal)", "place": "Mūrdhanya-Nāsikya (Retroflex-Nasal)"},
+    # Ṭavarga (Retroflex)
+    "ट": {"token": "ta_ret", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Mūrdhanya (Retroflex)"},
+    "ठ": {"token": "tha_ret", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Mūrdhanya (Retroflex)"},
+    "ड": {"token": "da_ret", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Mūrdhanya (Retroflex)"},
+    "ढ": {"token": "dha_ret", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Mūrdhanya (Retroflex)"},
+    "ण": {"token": "nna", "type": "Anunāsika (Nasal)", "place": "Mūrdhanya-Nāsikya (Retroflex-Nasal)"},
 
-    # 4. Tavarga (Dental / Dantya)
-    "ta_den": {"char": "त", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Dantya (Dental)"},
-    "tha_den": {"char": "थ", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Dantya (Dental)"},
-    "da_den": {"char": "द", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Dantya (Dental)"},
-    "dha_den": {"char": "ध", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Dantya (Dental)"},
-    "na": {"char": "न", "type": "Anunāsika (Nasal)", "place": "Dantya-Nāsikya (Dental-Nasal)"},
+    # Tavarga (Dental)
+    "त": {"token": "ta_den", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Dantya (Dental)"},
+    "थ": {"token": "tha_den", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Dantya (Dental)"},
+    "द": {"token": "da_den", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Dantya (Dental)"},
+    "ध": {"token": "dha_den", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Dantya (Dental)"},
+    "न": {"token": "na", "type": "Anunāsika (Nasal)", "place": "Dantya-Nāsikya (Dental-Nasal)"},
 
-    # 5. Pavarga (Labial / Oṣṭhya)
-    "pa": {"char": "प", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Oṣṭhya (Labial)"},
-    "pha": {"char": "फ", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Oṣṭhya (Labial)"},
-    "ba": {"char": "ब", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Oṣṭhya (Labial)"},
-    "bha": {"char": "भ", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Oṣṭhya (Labial)"},
-    "ma": {"char": "म", "type": "Anunāsika (Nasal)", "place": "Oṣṭhya-Nāsikya (Labial-Nasal)"},
+    # Pavarga (Labial)
+    "प": {"token": "pa", "type": "Sparśa (Alpaprāṇa / Aghoṣa)", "place": "Oṣṭhya (Labial)"},
+    "फ": {"token": "pha", "type": "Sparśa (Mahāprāṇa / Aghoṣa)", "place": "Oṣṭhya (Labial)"},
+    "ब": {"token": "ba", "type": "Sparśa (Alpaprāṇa / Ghoṣa)", "place": "Oṣṭhya (Labial)"},
+    "भ": {"token": "bha", "type": "Sparśa (Mahāprāṇa / Ghoṣa)", "place": "Oṣṭhya (Labial)"},
+    "म": {"token": "ma", "type": "Anunāsika (Nasal)", "place": "Oṣṭhya-Nāsikya (Labial-Nasal)"},
 
-    # ------------------ ANTASTHA (Semivowels - 4) ------------------
-    "ya": {"char": "य", "type": "Antastha (Semivowel)", "place": "Tālavya (Palatal)"},
-    "ra": {"char": "र", "type": "Antastha (Semivowel)", "place": "Mūrdhanya (Retroflex)"},
-    "la": {"char": "ल", "type": "Antastha (Semivowel)", "place": "Dantya (Dental)"},
-    "va": {"char": "व", "type": "Antastha (Semivowel)", "place": "Dantoṣṭhya (Dento-Labial)"},
+    # Antastha (Semivowels)
+    "य": {"token": "ya", "type": "Antastha (Semivowel)", "place": "Tālavya (Palatal)"},
+    "र": {"token": "ra", "type": "Antastha (Semivowel)", "place": "Mūrdhanya (Retroflex)"},
+    "ल": {"token": "la", "type": "Antastha (Semivowel)", "place": "Dantya (Dental)"},
+    "व": {"token": "va", "type": "Antastha (Semivowel)", "place": "Dantoṣṭhya (Dento-Labial)"},
 
-    # ------------------ ŪṢMAN (Sibilants & Aspirate - 4) ------------------
-    "sha_pal": {"char": "श", "type": "Ūṣman (Sibilant)", "place": "Tālavya (Palatal)"},
-    "sha_ret": {"char": "ष", "type": "Ūṣman (Sibilant)", "place": "Mūrdhanya (Retroflex)"},
-    "sa": {"char": "स", "type": "Ūṣman (Sibilant)", "place": "Dantya (Dental)"},
-    "ha": {"char": "ह", "type": "Ūṣman (Aspirate)", "place": "Kaṇṭhya / Urasya (Guttural/Glottal)"},
-
-    # ------------------ AYOGAVĀHA (Modifiers - 4) ------------------
-    "am": {"char": "अं (Anusvāra)", "type": "Ayogavāha", "place": "Nāsikya (Nasal)"},
-    "ah": {"char": "अः (Visarga)", "type": "Ayogavāha", "place": "Kaṇṭhya (Guttural)"},
-    "jihva": {"char": "ᳵ (Jihvāmūlīya)", "type": "Ayogavāha", "place": "Jihvāmūla (Root of Tongue)"},
-    "upadh": {"char": "ᳶ (Upadhmānīya)", "type": "Ayogavāha", "place": "Oṣṭhya (Labial)"},
+    # Ūṣman (Sibilants & Aspirates)
+    "श": {"token": "sha_pal", "type": "Ūṣman (Sibilant)", "place": "Tālavya (Palatal)"},
+    "ष": {"token": "sha_ret", "type": "Ūṣman (Sibilant)", "place": "Mūrdhanya (Retroflex)"},
+    "स": {"token": "sa", "type": "Ūṣman (Sibilant)", "place": "Dantya (Dental)"},
+    "ह": {"token": "ha", "type": "Ūṣman (Aspirate)", "place": "Kaṇṭhya (Guttural)"},
+    "अं": {"token": "am", "type": "Ayogavāha (Anusvāra)", "place": "Nāsikya (Nasal)"},
+    "अः": {"token": "ah", "type": "Ayogavāha (Visarga)", "place": "Kaṇṭhya (Guttural)"}
 }
 
-def get_phonetic_details(label: str) -> dict:
-    return PHONETIC_MAP.get(
-        label.lower().strip(),
-        {"char": label, "type": "Standard Sound", "place": "General Articulation"}
-    )
+def get_phonetic_details(letter: str) -> dict:
+    # Match the base Devanagari character
+    cleaned_letter = letter.strip()
+    if cleaned_letter in PHONETIC_MAP:
+        return {**PHONETIC_MAP[cleaned_letter], "char": cleaned_letter}
+    
+    # Check first character fallback
+    for char in cleaned_letter:
+        if char in PHONETIC_MAP:
+            return {**PHONETIC_MAP[char], "char": char}
+
+    return {"char": cleaned_letter, "token": "unknown", "type": "General Phoneme", "place": "Undefined Sthāna"}
